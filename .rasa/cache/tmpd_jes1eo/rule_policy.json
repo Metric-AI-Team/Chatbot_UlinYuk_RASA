@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st\"}}]": "utter_st",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st\"}}, {\"prev_action\": {\"action_name\": \"utter_st\"}, \"user\": {\"intent\": \"choose_st\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}]": "utter_st_2",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2\"}, \"user\": {\"intent\": \"choose_st_2\"}}]": "utter_st_2_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2_btn\"}, \"user\": {\"intent\": \"choose_st_2\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_1\"}}]": "utter_st_1",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_1\"}}, {\"prev_action\": {\"action_name\": \"utter_st_1\"}, \"user\": {\"intent\": \"choose_st_1\"}}]": "utter_st_1_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_1\"}}, {\"prev_action\": {\"action_name\": \"utter_st_1\"}, \"user\": {\"intent\": \"choose_st_1\"}}, {\"prev_action\": {\"action_name\": \"utter_st_1_btn\"}, \"user\": {\"intent\": \"choose_st_1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}]": "utter_st_3",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3\"}, \"user\": {\"intent\": \"choose_st_3\"}}]": "utter_st_3_btn",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3_btn\"}, \"user\": {\"intent\": \"choose_st_3\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3\"}, \"user\": {\"intent\": \"choose_st_3\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2_btn\"}, \"user\": {\"intent\": \"choose_st_2\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_2\"}}, {\"prev_action\": {\"action_name\": \"utter_st_2\"}, \"user\": {\"intent\": \"choose_st_2\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3\"}, \"user\": {\"intent\": \"choose_st_3\"}}, {\"prev_action\": {\"action_name\": \"utter_st_3_btn\"}, \"user\": {\"intent\": \"choose_st_3\"}}]"
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+version: '3.1'
+intents:
+- choose_alasan
+- choose_alasan_2
+- choose_alasan_3
+- choose_alasan_4
+- choose_cuaca
+- choose_khas
+- choose_khas_1
+- choose_khas_2
+- choose_khas_3
+- choose_kuliner
+- choose_oleh
+- choose_oleh_1
+- choose_oleh_2
+- choose_oleh_3
+- choose_st
+- choose_st_1
+- choose_st_2
+- choose_st_3
+- choose_wisata
+- cuaca
+- goodbye
+- greet
+- main_menu
+- nama_user
+responses:
+  utter_greet_name:
+  - text: Halo ! Saya MetricAI Bot, siapa namamu?
+  utter_greet:
+  - text: " # ✨Selamat datang di Kota Bandung!✨ # Dan Bandung bagiku bukan cuma masalah geografis, lebih jauh dari itu melibatkan perasaan, yang bersamaku ketika sunyi'-Pidi Baiq Kutipan diatas mengingatkan kita tentang suasana Kota Bandung yang selalu memiliki arti bagi mereka yang telah menjadi penghuni kota kembang, atau bahkan bagi semua orang sekedar bersinggah"
+    image: https://1.bp.blogspot.com/-3PN85XCk1yI/WCE36-pdIfI/AAAAAAAAAII/poyTfC4cxnsvfsY8Ycc9Fy9De6bzPGaxQCLcB/s1600/Lokasi-Gedung-Sate.jpg
+  utter_kalimat_awal:
+  - text: Sudah siap membuat kenangan baru di Kota Bandung?
+    buttons:
+    - title: Siap!
+      payload: /main_menu
+    - title: Tidak
+      payload: /goodbye
+  utter_welcome:
+  - text: Apa yang ingin kamu ketahui?
+    buttons:
+    - title: Alasan harus pergi ke Bandung
+      payload: /choose_alasan
+    - title: Tempat Kuliner
+      payload: /choose_kuliner
+    - title: Tempat Wisata
+      payload: /choose_wisata
+    - title: Cuaca Kota Bandung
+      payload: /choose_cuaca
+  utter_goodbye:
+  - text: Bye
+  utter_alasan_satu:
+  - text: ✨Dinobatkan Sebagai Kota Kreatif Dunia oleh UNESCO✨ UNESCO memasukkan Bandung dalam jaringan kota kreatif, pada 11 Desember 2015. Pengakuan ini adalah bukti kalau Bandung diakui secara internasional sebagai kota dunia bidang desain. Pemerintah Bandung membangun beberapa taman kota dengan mengusung desain yang menarik, mendesaon ruang publik berstandar internasional, seperti alun-alun kota. Untuk mempertahankan predikat kota kreatif ini, pemerintah setempat mengajak warganya agar selalu menciptakan karya yang inovatif. Dengan keunikan ini, tentunya sangat layak bila kamu menjadikan Bandung sebagai destinasi liburan favorit.
+    buttons:
+    - title: Surga Kuliner
+      payload: /choose_alasan_2
+  utter_alasan_dua:
+  - text: ✨Surga Kuliner✨ Bandung memiliki reputasi sebagai surganya kuliner lezat. Tidak heran kita sering menjumpai jajanan khas Bandung di kota lainnya. Tetapi menikmatinya langsung di tempat asalnya akan terasa berbeda. Bandung punya banyak sajian makanan dan minuman  khas Sunda yang menggugah selera. Sebut saja, nasi tutug oncom, mie kocok, nasi timbel, dan pepes. Bukan itu saja,  Kota Kembang juga memiliki sejumlah jajanan populer. Contohnya, cimol, cireng, gehu, cuanki, dan batagor.
+    buttons:
+    - title: Panorama Alam yang Indah
+      payload: /choose_alasan_3
+  utter_alasan_tiga:
+  - text: ✨Panorama Alam yang Indah✨ Kota Bandung dikelilingi oleh pegunungan, sehingga udaranya terasa sejuk dan dingin. Suguhan alam yang memesona, akan membuat kamu betah berlama-lama di kota ini. Beberapa destinasi yang menarik kamu kunjungi, antara lain Tebing Keraton, Kawah Putih Ciwidey, Taman Hutan Jaya Giri Lembang, Air Terjun Omas, Gunung Tangkuban Perahu, Kawah Domas, Pemandian Air Panas Ciater, dan wisata alam lain sebagainya.
+    buttons:
+    - title: Belajar Sejarah
+      payload: /choose_alasan_4
+  utter_alasan_empat:
+  - text: ✨Belajar Sejarah✨ Kota Kembang ini dipenuhi oleh bangunan tua yang merupakan peninggalan kolonial Belanda. Keberadaannya selalu dilestarikan dan terawat dengan baik. Setidaknya tercatat ada 637 bangunan berusia ratusan tahun di kota ini. Pemerintah setempat pun sangat peduli dan menjadikannya sebagai cagar budaya yang sangat dilindungi. Untuk melihat keunikan bangunan itu, kamu bisa menuju ke Jalan Braga atau Jalan Asia Afrika. Berbagai bangunan berarsitektur Eropa masih berdiri dengan kokoh.
+  utter_tanya_loc:
+  - text: Ketikkan "Cuaca di [lokasi]" untuk mengetahui laporan cuaca !
+  utter_kuliner:
+  - text: Kuliner apa yang kamu suka?
+    buttons:
+    - title: Street Food
+      payload: /choose_st
+    - title: Makanan Khas Bandung
+      payload: /choose_khas
+    - title: Oleh-oleh Bandung
+      payload: /choose_oleh
+    - title: Kembali ke Menu
+      payload: /main_menu
+  utter_st:
+  - text: Berikut rekomendasi street food yang wajib kamu coba
+    buttons:
+    - title: Seblak
+      payload: /choose_st_1
+    - title: Batagor
+      payload: /choose_st_2
+    - title: Cuanki
+      payload: /choose_st_3
+    - title: Kategori Kuliner Lainnya
+      payload: /choose_kuliner
+  utter_st_1:
+  - text: ✨Seblak✨ Seblak merupakan jajanan khas Bandung yang memiliki cita rasa gurih pedas. Terbuat dari aneka kerupuk warna-warni yang direbus bersama bumbu hingga lembek, sosis, bakso, makaroni, mie, kwetiau, dan topping lainnya. Diolah dengan campuran bumbu gurih pedas yang aroma kencurnya sangat kuat. Untuk kamu yang suka pedas-pedas, jangan lupa cobain seblak ya!
+    image: https://selerasa.com/wp-content/uploads/2018/11/seblak-bandung-kumplit.jpg
+  utter_st_1_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    buttons:
+    - title: Kategori Streetfood Lainnya
+      payload: /choose_st
+  utter_st_2:
+  - text: ✨Batagor✨ Batagor adalah jajanan khas Sunda yang cocok untuk mengganjal perut di sore hari. Nama batagor merupakan singkatan  'Bakso Tahu Goreng' yang merujuk pada bahan dan cara membuat batagor. Banyak orang menyukai gurih renyahnya adonan bakso dan tahu goreng. Batagor makin enak saat ditambahkan dengan saus kacang. Jangan lupa untuk mencicipi batagor ya!
+    image: https://selerasa.com/wp-content/uploads/2021/11/Resep-Batagor-Bandung-500x500.jpg
+  utter_st_2_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    buttons:
+    - title: Kategori Streetfood Lainnya
+      payload: /choose_st
+  utter_st_3:
+  - text: ✨Cuanki✨ Cuanki adalah jajanan khas Kota Bandung semacam siomay atau bakso tahu kering, yang kemudian diberi kuah. Sepintas cuanki memang tak berbeda dengan bakso pada umumnya. Bedanya, cuanki tidak disertai topping berupa mie atau sayuran. Cuanki biasa dijual oleh pedagang keliling menggunakan pikulan. Sebutan cuanki sendiri konon merupakan singkatan dari kata Cari Uang Jalan Kaki.
+    image: https://img.okezone.com/content/2015/08/02/298/1189258/cuanki-jajanan-bandung-yang-bikin-nagih-MfeAS60UK7.jpg
+  utter_st_3_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi streetfood lainnya!
+    buttons:
+    - title: Kategori Streetfood Lainnya
+      payload: /choose_st
+  utter_khas:
+  - text: Berikut rekomendasi makanan khas Bandung yang wajib kamu coba
+    buttons:
+    - title: Gepuk
+      payload: /choose_khas_1
+    - title: Surabi
+      payload: /choose_khas_2
+    - title: Mie Kocok
+      payload: /choose_khas_3
+    - title: Kategori Kuliner Lainnya
+      payload: /choose_kuliner
+  utter_khas_1:
+  - text: ✨Gepuk✨ Gepuk merupakan lauk yang terbuat dari daging sapi, berbentuk pipihdan dimasak dengan bumbu gurih. Biasanya gepuk disebut juga dengan 'empal'. Bandung memiliki gepuk legendarisnya sendiri. Gepuk cocok untuk teman makan nasi di rumah. Jangan lupa coba gepuk ya!
+    image: https://cdn-2.tstatic.net/jambi/foto/bank/images/cara-membuat-empal-gepuk-daging.jpg
+  utter_khas_1_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi makanan khas lainnya!
+    buttons:
+    - title: Kategori Makanan Khas Lainnya
+      payload: /choose_khas
+  utter_khas_2:
+  - text: ✨Surabi✨ Makanan khas Bandung ini sudah menjamur hampir di seluruh penjuru Indonesia. Tapi kamu wajib mencobanya di kota asli Surabi itu berasal. Makanan yang satu ini mirip dengan pancake, karena sama-sama terbuat dari bahan tepung terigu. Bedanya,Surabi Bandung dimasak dengan cara dibakar diatas tungku dengan adonan tebal, sehingga terasa nikmat untuk disantap dalam keadaan masih hangat. Untuk menambah cita rasa dari Surabi, kamu bisa memilih bermacam varian toping seperti coklat, durian, keju bahkan sosis untuk diletakan di atasnya. Surabi Bandung menjadi teman yang sangat cocok menyeruput teh di sore hari.
+    image: https://bisniswisata.co.id/wp-content/uploads/2020/01/surabi.jpg
+  utter_khas_2_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi makanan khas lainnya!
+    buttons:
+    - title: Kategori Makanan Khas Lainnya
+      payload: /choose_khas
+  utter_khas_3:
+  - text: ✨Mie Kocok✨ Kuliner khas Bandung yang tidak boleh kamu lewatkan berikutnya adalah Mie Kocok Bandung. Olahan mie berbentuk pipih dengan ditambah bermacam sayuran tauge serta kikil sapi membuat makanan khas Bandung ini memiliki cita rasa yang akan dirindukan setiap harinya. Nama “Mie Kocok” sendiri diberikan karena sebelum disajikan, olahan mie terlebih dahulu diaduk dan dikocok. Makanan khas Bandung satu ini pastinya akan masuk dalam daftar kuliner terfavorit yang akan paling kamu indukan tiap kali hendak berkunjung ke Kota Bandung.
+    image: https://upload.wikimedia.org/wikipedia/commons/f/f5/Mie-kocok-khas-Bandung-IGisnasutanto.jpg
+  utter_khas_4_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi makanan khas lainnya!
+    buttons:
+    - title: Kategori Makanan Khas Lainnya
+      payload: /choose_khas
+  utter_oleh:
+  - text: Berikut rekomendasi oleh-oleh Bandung yang wajib kamu coba
+    buttons:
+    - title: Peyeum
+      payload: /choose_oleh_1
+    - title: Tahu Susu Lembang
+      payload: /choose_oleh_2
+    - title: Wajit Cililin
+      payload: /choose_oleh_3
+    - title: Kategori Kuliner Lainnya
+      payload: /choose_kuliner
+  utter_oleh_1:
+  - text: ✨Peyeum✨ Peuyeum merupakan tape singkong khas Bandung yang bisa Anda temukan dengan mudah di warung-warung pinggir jalan dekat perbatasan Bandung. Tape ini juga menjadi salah satu oleh-oleh khas Bandung favorit wisatawan karena memiliki rasa dan aroma yang khas. Kamu bisa membeli peuyeum Bandung yang masih mentah atau sebentar lagi matang agar saat tiba di rumah, peuyeum bisa langsung dinikmati.
+    image: https://cdn-2.tstatic.net/travel/foto/bank/images/peuyeum-camilan-khas-bandung-yang-terbuat-dari-singkong.jpg
+  utter_oleh_1_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi oleh-oleh lainnya!
+    buttons:
+    - title: Kategori Oleh-Oleh Lainnya
+      payload: /choose_oleh
+  utter_oleh_2:
+  - text: ✨Tahu Susu Lembang✨ Setelah puas bermain di daerah Lembang Bandung, Anda bisa mampir terlebih dahulu ke warung Tahu Susu Lembang yang terkenal enak. Tahu Bandung satu ini memiliki rasa lebih gurih dengan tekstur yang lembut saat di mulut dan tentunya tidak masam. Tahu Susu Lembang ini sangat cocok Anda nikmati saat masih hangat dengan tambahan cabai rawit pedas.
+    image: https://bisniswisata.co.id/wp-content/uploads/2020/01/surabi.jpg
+  utter_oleh_2_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi oleh-oleh lainnya!
+    buttons:
+    - title: Kategori Oleh-Oleh Lainnya
+      payload: /choose_oleh
+  utter_oleh_3:
+  - text: ✨Wajit Cililin✨ Wajit Cililin termasuk makanan tradisional Khas Bandung lain yang juga bisa Anda jadikan oleh-oleh saat berkunjung ke Bandung. Jajanan ini bisa kamu temukan di sekitar daerah Cililin dan juga pusat oleh-oleh Bandung di Cihampelas. Ciri khas dari Wajit Cililin ini terdapat pada rasanya yang manis dan legit serta bungkus daun jagung keringnya. Bahan utama pembuatan wajit Cililin khas Bandung ini adalah ketan, kelapa, gula aren, dan vanili.
+    image: https://img.inews.co.id/media/822/files/inews_new/2018/10/25/wajit1.jpg
+  utter_oleh_3_btn:
+  - text: Klik button dibawah untuk melihat rekomendasi oleh-oleh lainnya!
+    buttons:
+    - title: Kategori Oleh-Oleh Lainnya
+      payload: /choose_oleh
+entities:
+- nama
+- loc
+slots:
+  nama:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: nama
+      type: from_entity
+  loc:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - entity: loc
+      type: from_entity
+actions:
+- action_cuaca
+- action_nama_user
+- utter_alasan_dua
+- utter_alasan_empat
+- utter_alasan_satu
+- utter_alasan_tiga
+- utter_goodbye
+- utter_greet
+- utter_greet_name
+- utter_kalimat_awal
+- utter_kuliner
+- utter_st
+- utter_st_1
+- utter_st_1_btn
+- utter_tanya_loc
+- utter_welcome
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

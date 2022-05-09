@@ -1,0 +1,30 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}]": "utter_alasan_dua",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_dua\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}]": "utter_alasan_empat",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_empat\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cuaca\"}}]": "action_cuaca",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cuaca\"}}, {\"prev_action\": {\"action_name\": \"action_cuaca\"}, \"user\": {\"intent\": \"cuaca\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}]": "utter_alasan_tiga",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_tiga\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_empat\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cuaca\"}}, {\"prev_action\": {\"action_name\": \"action_cuaca\"}, \"user\": {\"intent\": \"cuaca\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_dua\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cuaca\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_4\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}, {\"prev_action\": {\"action_name\": \"utter_alasan_tiga\"}, \"user\": {\"intent\": \"choose_alasan_3\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"choose_alasan_2\"}}]"
+    ]
+  }
+}

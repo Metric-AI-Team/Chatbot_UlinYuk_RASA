@@ -1,0 +1,51 @@
+version: "3.1"
+
+rules:
+
+- rule: back to st
+  steps:
+  - intent: choose_st
+  - action: utter_st
+
+- rule: to st 1
+  steps:
+  - intent: choose_st_1
+  - action: utter_st_1
+  - action: utter_st_1_btn
+
+- rule: to st 2
+  steps:
+  - intent: choose_st_2
+  - action: utter_st_2
+  - action: utter_st_2_btn
+  
+- rule: to st 3
+  steps:
+  - intent: choose_st_3
+  - action: utter_st_3
+  - action: utter_st_3_btn
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - rule: cuaca
+#   steps:
+#   - intent: cuaca
+#   - action: action_cuaca
+
+# - rule: alasan2
+#   steps:
+#   - intent: choose_alasan_2
+#   - action: utter_alasan_dua
+
+# - rule: alasan3
+#   steps:
+#   - intent: choose_alasan_3
+#   - action: utter_alasan_tiga
+
+# - rule: alasan4
+#   steps:
+#   - intent: choose_alasan_4
+#   - action: utter_alasan_empat

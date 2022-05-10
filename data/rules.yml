@@ -25,6 +25,11 @@ rules:
   - action: utter_st_3
   - action: utter_st_3_btn
 
+- rule: back to kuliner
+  steps:
+  - intent: choose_kuliner
+  - action: utter_kuliner
+
 # - rule: Say goodbye anytime the user says goodbye
 #   steps:
 #   - intent: goodbye

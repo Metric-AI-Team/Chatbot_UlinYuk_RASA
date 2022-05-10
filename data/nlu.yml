@@ -52,7 +52,7 @@ nlu:
     - saya [rafly](nama)
     - saya [jauhar](nama)
     - saya [ikhwan](nama)
-    - nama saya [rusydi](nama)
+    - nama saya [fanny](nama)
 - intent: main_menu
   examples: |
     - Siap!

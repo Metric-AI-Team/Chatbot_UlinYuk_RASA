@@ -9,15 +9,15 @@ digraph  {
 6 [class=active, fontsize=12, label=utter_welcome];
 7 [class=active, fontsize=12, label=utter_kuliner];
 8 [class=active, fontsize=12, label=utter_st];
-9 [class=active, fontsize=12, label=utter_st_1];
-10 [class=active, fontsize=12, label=utter_st_1_btn];
+9 [class=active, fontsize=12, label=utter_st_2];
+10 [class=active, fontsize=12, label=utter_st_2_btn];
 11 [class="intent dashed active", label="  ?  ", shape=rect];
 12 [class="intent active", fillcolor=lightblue, label="/greet", shape=rect, style=filled];
 13 [class="intent active", fillcolor=lightblue, label="/nama_user", shape=rect, style=filled];
 14 [class="intent active", fillcolor=lightblue, label="/main_menu", shape=rect, style=filled];
 15 [class="intent active", fillcolor=lightblue, label="/choose_kuliner", shape=rect, style=filled];
 16 [class="intent active", fillcolor=lightblue, label="/choose_st", shape=rect, style=filled];
-17 [class="intent active", fillcolor=lightblue, label="/choose_st_1", shape=rect, style=filled];
+17 [class="intent active", fillcolor=lightblue, label="/choose_st_2", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
 0 -> 1  [class=active, key=NONE, label=""];
 1 -> 12  [class=active, key=0];

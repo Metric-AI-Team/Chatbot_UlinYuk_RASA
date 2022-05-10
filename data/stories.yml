@@ -84,3 +84,47 @@ stories:
   - intent: choose_st_1
   - action: utter_st_1
   - action: utter_st_1_btn
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet_name
+  - intent: nama_user
+    entities:
+    - nama: fanny
+  - slot_was_set:
+    - nama: fanny
+  - action: action_nama_user
+  - action: utter_greet
+  - action: utter_kalimat_awal
+  - intent: main_menu
+  - action: utter_welcome
+  - intent: choose_kuliner
+  - action: utter_kuliner
+  - intent: choose_st
+  - action: utter_st
+  - intent: choose_st_2
+  - action: utter_st_2
+  - action: utter_st_2_btn
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet_name
+  - intent: nama_user
+    entities:
+    - nama: fanny
+  - slot_was_set:
+    - nama: fanny
+  - action: action_nama_user
+  - action: utter_greet
+  - action: utter_kalimat_awal
+  - intent: main_menu
+  - action: utter_welcome
+  - intent: choose_kuliner
+  - action: utter_kuliner
+  - intent: choose_st
+  - action: utter_st
+  - intent: choose_st_3
+  - action: utter_st_3
+  - action: utter_st_3_btn

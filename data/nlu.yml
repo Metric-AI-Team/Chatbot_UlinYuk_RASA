@@ -40,6 +40,7 @@ nlu:
     - cuaca saat ini di [pasirkaliki](loc)
     - bagaimana keadaan cuaca di [ciumbuleuit](loc)
     - lapocan cuara [sukajadi](loc)
+    - cuaca di [dago](loc)
 - intent: nama_user
   examples: |
     - nama saya [rusydi](nama)
@@ -52,7 +53,8 @@ nlu:
     - saya [rafly](nama)
     - saya [jauhar](nama)
     - saya [ikhwan](nama)
-    - nama saya [rusydi](nama)
+    - [fanny](nama)
+    - [fanny](nama)
 - intent: main_menu
   examples: |
     - Siap!

@@ -28,7 +28,7 @@ responses:
   utter_greet_name:
   - text: Halo ! Saya MetricAI Bot, siapa namamu?
   utter_greet:
-  - text: " # ✨Selamat datang di Kota Bandung!✨ # Dan Bandung bagiku bukan cuma masalah geografis, lebih jauh dari itu melibatkan perasaan, yang bersamaku ketika sunyi'-Pidi Baiq Kutipan diatas mengingatkan kita tentang suasana Kota Bandung yang selalu memiliki arti bagi mereka yang telah menjadi penghuni kota kembang, atau bahkan bagi semua orang sekedar bersinggah"
+  - text: "  ✨Selamat datang di Kota Bandung!✨ 'Dan Bandung bagiku bukan cuma masalah geografis, lebih jauh dari itu melibatkan perasaan, yang bersamaku ketika sunyi'-Pidi Baiq, kutipan tersebut mengingatkan kita tentang suasana Kota Bandung yang selalu memiliki arti bagi mereka yang telah menjadi penghuni kota kembang, atau bahkan bagi semua orang untuk sekedar bersinggah"
     image: https://1.bp.blogspot.com/-3PN85XCk1yI/WCE36-pdIfI/AAAAAAAAAII/poyTfC4cxnsvfsY8Ycc9Fy9De6bzPGaxQCLcB/s1600/Lokasi-Gedung-Sate.jpg
   utter_kalimat_awal:
   - text: Sudah siap membuat kenangan baru di Kota Bandung?
@@ -52,21 +52,36 @@ responses:
   - text: Bye
   utter_alasan_satu:
   - text: ✨Dinobatkan Sebagai Kota Kreatif Dunia oleh UNESCO✨ UNESCO memasukkan Bandung dalam jaringan kota kreatif, pada 11 Desember 2015. Pengakuan ini adalah bukti kalau Bandung diakui secara internasional sebagai kota dunia bidang desain. Pemerintah Bandung membangun beberapa taman kota dengan mengusung desain yang menarik, mendesaon ruang publik berstandar internasional, seperti alun-alun kota. Untuk mempertahankan predikat kota kreatif ini, pemerintah setempat mengajak warganya agar selalu menciptakan karya yang inovatif. Dengan keunikan ini, tentunya sangat layak bila kamu menjadikan Bandung sebagai destinasi liburan favorit.
+    image: https://petualang.travelingyuk.com/unggah/2019/08/img_8868_Q2k.JPG
+  utter_alasan_1_btn:
+  - text: Klik button dibawah untuk melihat alasan selanjutnya
     buttons:
     - title: Surga Kuliner
       payload: /choose_alasan_2
   utter_alasan_dua:
   - text: ✨Surga Kuliner✨ Bandung memiliki reputasi sebagai surganya kuliner lezat. Tidak heran kita sering menjumpai jajanan khas Bandung di kota lainnya. Tetapi menikmatinya langsung di tempat asalnya akan terasa berbeda. Bandung punya banyak sajian makanan dan minuman  khas Sunda yang menggugah selera. Sebut saja, nasi tutug oncom, mie kocok, nasi timbel, dan pepes. Bukan itu saja,  Kota Kembang juga memiliki sejumlah jajanan populer. Contohnya, cimol, cireng, gehu, cuanki, dan batagor.
+    image: https://sgp1.digitaloceanspaces.com/tz-mag-id/wp-content/uploads/2018/04/030304042626/Preview-MakananKhasBandung-770x433.jpg
+  utter_alasan_2_btn:
+  - text: Klik button dibawah untuk melihat alasan selanjutnya
     buttons:
     - title: Panorama Alam yang Indah
       payload: /choose_alasan_3
   utter_alasan_tiga:
   - text: ✨Panorama Alam yang Indah✨ Kota Bandung dikelilingi oleh pegunungan, sehingga udaranya terasa sejuk dan dingin. Suguhan alam yang memesona, akan membuat kamu betah berlama-lama di kota ini. Beberapa destinasi yang menarik kamu kunjungi, antara lain Tebing Keraton, Kawah Putih Ciwidey, Taman Hutan Jaya Giri Lembang, Air Terjun Omas, Gunung Tangkuban Perahu, Kawah Domas, Pemandian Air Panas Ciater, dan wisata alam lain sebagainya.
+    image: https://www.wisataidn.com/wp-content/uploads/2020/07/Tebing-Keraton-Bandung.jpg
+  utter_alasan_3_btn:
+  - text: Klik button dibawah untuk melihat alasan selanjutnya
     buttons:
     - title: Belajar Sejarah
       payload: /choose_alasan_4
   utter_alasan_empat:
   - text: ✨Belajar Sejarah✨ Kota Kembang ini dipenuhi oleh bangunan tua yang merupakan peninggalan kolonial Belanda. Keberadaannya selalu dilestarikan dan terawat dengan baik. Setidaknya tercatat ada 637 bangunan berusia ratusan tahun di kota ini. Pemerintah setempat pun sangat peduli dan menjadikannya sebagai cagar budaya yang sangat dilindungi. Untuk melihat keunikan bangunan itu, kamu bisa menuju ke Jalan Braga atau Jalan Asia Afrika. Berbagai bangunan berarsitektur Eropa masih berdiri dengan kokoh.
+    image: https://asset.kompas.com/crops/0GiQOXlyFIL68E_gQC4YzU3lyvk=/0x0:1200x800/750x500/data/photo/2019/10/17/5da7fb5e171f6.jpg
+  utter_back_to_menu:
+  - text: Ayo ketahui destinasi dan kuliner Bandung lebih banyak lagi!
+    buttons:
+    - title: Kembali ke Menu
+      payload: /main_menu
   utter_tanya_loc:
   - text: Ketikkan "Cuaca di [lokasi]" untuk mengetahui laporan cuaca !
   utter_kuliner:
@@ -145,7 +160,7 @@ responses:
   utter_khas_3:
   - text: ✨Mie Kocok✨ Kuliner khas Bandung yang tidak boleh kamu lewatkan berikutnya adalah Mie Kocok Bandung. Olahan mie berbentuk pipih dengan ditambah bermacam sayuran tauge serta kikil sapi membuat makanan khas Bandung ini memiliki cita rasa yang akan dirindukan setiap harinya. Nama “Mie Kocok” sendiri diberikan karena sebelum disajikan, olahan mie terlebih dahulu diaduk dan dikocok. Makanan khas Bandung satu ini pastinya akan masuk dalam daftar kuliner terfavorit yang akan paling kamu indukan tiap kali hendak berkunjung ke Kota Bandung.
     image: https://upload.wikimedia.org/wikipedia/commons/f/f5/Mie-kocok-khas-Bandung-IGisnasutanto.jpg
-  utter_khas_4_btn:
+  utter_khas_3_btn:
   - text: Klik button dibawah untuk melihat rekomendasi makanan khas lainnya!
     buttons:
     - title: Kategori Makanan Khas Lainnya
@@ -186,8 +201,8 @@ responses:
     - title: Kategori Oleh-Oleh Lainnya
       payload: /choose_oleh
 entities:
-- nama
 - loc
+- nama
 slots:
   nama:
     type: rasa.shared.core.slots.TextSlot
@@ -206,18 +221,30 @@ slots:
 actions:
 - action_cuaca
 - action_nama_user
+- utter_alasan_1_btn
+- utter_alasan_2_btn
+- utter_alasan_3_btn
 - utter_alasan_dua
 - utter_alasan_empat
 - utter_alasan_satu
 - utter_alasan_tiga
+- utter_back_to_menu
 - utter_goodbye
 - utter_greet
 - utter_greet_name
 - utter_kalimat_awal
+- utter_khas
+- utter_khas_1
+- utter_khas_1_btn
 - utter_kuliner
+- utter_oleh
+- utter_oleh_1
+- utter_oleh_1_btn
 - utter_st
 - utter_st_1
 - utter_st_1_btn
+- utter_st_2
+- utter_st_2_btn
 - utter_tanya_loc
 - utter_welcome
 session_config:

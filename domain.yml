@@ -218,6 +218,8 @@ actions:
 - utter_st
 - utter_st_1
 - utter_st_1_btn
+- utter_st_2
+- utter_st_2_btn
 - utter_tanya_loc
 - utter_welcome
 session_config:
